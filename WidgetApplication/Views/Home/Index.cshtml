@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="page-content">
+	<div id="ignored_widgets"></div>
+	<div id="selected_widgets"></div>
+	
+</div>
+
+
+ @Styles.Render("~/Content/themes/base/jquery-ui.css")
+ @Styles.Render("~/Content/themes/base/jquery.ui.autocomplete.css")
+ @Styles.Render("~/Content/themes/base/jquery.ui.dialog.css")
+ @Styles.Render("~/Content/Widgets.css")
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script data-main="/Scripts/Widgets/main.js" src="/Scripts/require.min.js"></script>

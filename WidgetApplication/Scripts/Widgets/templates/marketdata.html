@@ -1,0 +1,41 @@
+
+<div class="row marketdata_chart" name="marketdata_chart" style="display:none">
+	<div class="col c100">
+		<div name="chart_img" style="width:339px; height:169px;">
+			
+			<div name="marketdata_chart_title" class="title" style="display:none">
+				<span id="title"></span>
+				<a href="javascript:void(0);">X</a>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="table" name="marketdata_table">
+<% _.each(marketDataCollection, function(marketData) { %>
+	<div class="row" name="marketdata_item" id_attr="<%- marketData.Id %>">
+		<div class="col c100">
+			<div class="table">
+				<div class="row">
+					<div class="col c25">
+						<a class="market-data-lnk" id_attr="<%- marketData.Id %>"><%- marketData.Title %></a>
+						<span style="text-align:right"><a href="#" class="btn remove-btn2" id_attr="<%- marketData.Id %>">X</a></span>
+					</div>
+					<div class="col c25"><%= moment(marketData.Time).format("DD MMM YYYY") %></div>
+					<div class="col c25"><%- marketData.LastValue %></div>
+					<div class="col c25"><%- marketData.ValueReferenceDifference %></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<% }); %>
+	<div class="row">
+		<div class="col c100">
+			<input type="hidden" name="h_widget<%- widgetId %>_selected_market_data"/> 
+			<input name="ignored_market_data" id_attr="<%- widgetId %>"/>
+			<a href="#" name="market_data_add" id_attr="<%-widgetId %>" class="market-data-add">Add</a>
+		</div>
+	</div>
+</div>

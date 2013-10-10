@@ -1,0 +1,28 @@
+<div class="table" name="widget_table" style="border:#554488 solid 1px" id_attr="<%- widget.Id %>">
+	<div class="row">
+		<div class="col c100">
+			<div class="table">
+				<div class="row">
+					<div class="col c25"><i class="icon-user"></i>Title</div>
+					<div class="col c75"><i class="icon-time"></i>UploadDate</div>
+				</div>
+				<div class="row">
+					<div class="col c25">
+						<input type="hidden" name="h_widget<%- widget.Id %>_selected_market_data"/> 
+						<a href="#/widgets/<%- widget.Id %>"><%- widget.Title %></a>
+						<span style="text-align:right"><a href="#" class="btn remove-btn" id_attr="<%- widget.Id %>">X</a></span>
+					</div>
+					<div class="col c75">
+						<%= moment(widget.UploadDate).format("DD MMM YYYY") %> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col c100">
+			<div id="widget<%- widget.Id %>_market_data"></div>
+		</div>
+	</div>
+				
+</div>

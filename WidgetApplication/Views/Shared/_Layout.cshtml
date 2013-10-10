@@ -38,6 +38,7 @@
             <div class="content-wrapper">
                 <div class="float-left">
                     <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                    <p>@Html.TextBox("confType",System.Configuration.ConfigurationManager.AppSettings["ConfigurationType"])</p>
                 </div>
             </div>
         </footer>

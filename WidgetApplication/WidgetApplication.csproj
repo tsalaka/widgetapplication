@@ -352,9 +352,6 @@
     <Content Include="Scripts\Widgets\views\show.js" />
     <Content Include="Scripts\Widgets\views\widget.js" />
     <Content Include="Scripts\Widgets\views\widgets.js" />
-    <Content Include="Unity.Mvc3.README.txt" />
-    <Content Include="Unity.Mvc4.README.txt" />
-    <Content Include="Unity.WebAPI.README.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -390,6 +387,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\file system.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

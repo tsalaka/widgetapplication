@@ -5,7 +5,6 @@ using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Channels;
-using System.ServiceModel.Description;
 using System.ServiceModel.Dispatcher;
 using System.Web;
 using System.Web.Mvc;

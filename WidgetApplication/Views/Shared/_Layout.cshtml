@@ -24,7 +24,7 @@
                             <li>@Html.ActionLink("About", "About", "Home")</li>
                             <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         </ul>
-                    </nav>
+	             </nav>
                 </div>
             </div>
         </header>
@@ -37,7 +37,8 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+	                <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+
                     <p>@Html.TextBox("confType",System.Configuration.ConfigurationManager.AppSettings["ConfigurationType"])</p>
                 </div>
             </div>
